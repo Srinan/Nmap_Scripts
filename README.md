@@ -1,4 +1,4 @@
-# Nmap_Scripts
+# Nmap_Scripts_Automater
 Author : Srinan
 
 Nmap automated scanner for easy understanding and easy use
