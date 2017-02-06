@@ -37,7 +37,8 @@ def main():
     print "(8) Fragment Packets"
     print "(9) Traceroute scan"
     print "(10) DNS Resolution scan"
-    print "(11) Exit"
+    print "(11) Banner grabbing"
+    print "(12) Exit"
     print" " +"\n" + " "
 
     option = raw_input("Choose your Scanning Option: ")
@@ -112,7 +113,13 @@ def main():
         print "\n[**] Done \n"
         main()
     
-    elif option == '11':
+   elif option == '11':
+        host = raw_input("Provide the IP range to scan")
+        os.system("nmap -sV --script=banner "+host)
+        print "\n[**] Done \n"
+        main()
+
+    elif option == '12':
         print "[**] Exiting Nmap_Automater"
         time.sleep(2)
         sys.exit()
